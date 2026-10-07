@@ -111,43 +111,6 @@ details p{margin:10px 0 0;color:var(--mute);max-width:44em}
 #dans.on{display:block}
 #dwa{display:none;margin-top:14px}
 @media(max-width:780px){.dq{grid-template-columns:1fr}}
-
-.tut{display:grid;grid-template-columns:1fr 1.25fr;gap:48px;align-items:center}
-.tut h2{margin-bottom:14px}
-.feat{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px}
-.feat li{display:flex;gap:12px;align-items:flex-start;color:var(--ink)}
-.feat i{flex:none;width:30px;height:30px;border-radius:50%;background:var(--navy);color:var(--gold2);display:grid;place-items:center;font:normal 700 15px "Cormorant Garamond",serif}
-.tc{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 24px 60px rgba(90,20,32,.22);border:1px solid var(--line)}
-.tch{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:16px 20px;display:flex;align-items:center;gap:14px;border-bottom:2px solid var(--gold)}
-.av{width:44px;height:44px;border-radius:50%;background:var(--gold);color:#fff;display:grid;place-items:center;font:700 18px "Cormorant Garamond",serif;box-shadow:0 0 0 4px rgba(227,201,127,.3)}
-.tch b{display:block;font:700 22px "Cormorant Garamond",serif;line-height:1.1}
-.tch small{color:#d9cdd0;font-size:13px}
-.tch small::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#5ad07a;margin-right:6px}
-.tsel{display:flex;gap:12px;padding:14px 20px;background:#faf6ee;border-bottom:1px solid var(--line)}
-.tsel div{flex:1}
-.tsel label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);margin-bottom:4px}
-.tsel select{margin:0;padding:8px 10px;font-size:15px;border-radius:8px}
-#tm{height:340px;overflow-y:auto;padding:18px 20px;display:flex;flex-direction:column;gap:12px;background:#fdfcf8;scroll-behavior:smooth}
-.tb{max-width:88%;padding:11px 15px;font-size:15.5px;line-height:1.6;white-space:pre-wrap;border-radius:14px;animation:pop .3s ease}
-.tb.s{align-self:flex-end;background:var(--navy);color:#fff;border-bottom-right-radius:4px}
-.tb.a{align-self:flex-start;background:#fff;border:1px solid var(--line);border-bottom-left-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-.tb .cp{display:block;margin-top:10px;background:none;border:1px solid var(--line);color:var(--mute);padding:3px 12px;border-radius:12px;font:13px Mukta,sans-serif;cursor:pointer}
-.tb .cp:hover{border-color:var(--gold);color:var(--navy)}
-.tb .wl{display:inline-block;margin-top:10px;color:var(--navy);font-weight:600;font-size:14px}
-.dots span{display:inline-block;width:8px;height:8px;margin-right:4px;border-radius:50%;background:var(--gold);animation:bl 1.2s infinite}
-.dots span:nth-child(2){animation-delay:.2s}.dots span:nth-child(3){animation-delay:.4s}
-@keyframes bl{0%,80%,100%{opacity:.25;transform:scale(.8)}40%{opacity:1;transform:scale(1.1)}}
-@keyframes pop{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.tchips{display:flex;gap:8px;flex-wrap:wrap;padding:0 20px 12px;background:#fdfcf8}
-.tchips button{background:#fff;border:1px solid var(--gold);color:var(--navy);padding:5px 12px;font:14px Mukta,sans-serif;border-radius:16px;cursor:pointer}
-.tchips button:hover{background:var(--gold);color:#fff}
-.tin{display:flex;gap:10px;align-items:flex-end;padding:14px 16px;border-top:1px solid var(--line);background:#fff}
-.tin textarea{margin:0;resize:none;border-radius:12px;min-height:46px;max-height:120px}
-.tin button{flex:none;width:46px;height:46px;border-radius:50%;border:0;background:var(--gold);color:#fff;font-size:20px;cursor:pointer}
-.tin button:disabled{opacity:.5;cursor:default}
-.tfoot{padding:0 20px 14px;font-size:13px;color:var(--mute);background:#fff}
-@media(prefers-reduced-motion:reduce){.tb,.dots span{animation:none}#tm{scroll-behavior:auto}}
-@media(max-width:860px){.tut{grid-template-columns:1fr;gap:30px}#tm{height:300px}}
 /* chatbot polish */
 #cbp{border-radius:16px;overflow:hidden}
 #cbt{box-shadow:0 0 0 0 rgba(184,146,61,.6),0 6px 20px rgba(0,0,0,.25);animation:pl 2.4s infinite}
@@ -182,7 +145,7 @@ input,select,textarea{width:100%;padding:11px 12px;border:1px solid #cfc8b4;back
 <div id="pg"></div>
 <header><nav>
 <a class="brand" href="#home" data-go="home">Social Wisdom <span>Academy</span></a>
-<ul><li><a href="#about" data-go="home">About</a></li><li><a href="#courses" data-go="home">Courses</a></li><li><a href="#doubt" data-go="home">Ask a doubt</a></li><li><a href="#subjects" data-go="home">Subjects</a></li><li><a href="#why" data-go="home">Perks</a></li><li><a href="#portal" data-go="portal">Student login</a></li><li><a class="btn" href="#enquiry" data-go="enquiry">Enquire now</a></li></ul>
+<ul><li><a href="#about" data-go="home">About</a></li><li><a href="#courses" data-go="home">Courses</a></li><li><a href="#subjects" data-go="home">Subjects</a></li><li><a href="#why" data-go="home">Perks</a></li><li><a href="#portal" data-go="portal">Student login</a></li><li><a class="btn" href="#enquiry" data-go="enquiry">Enquire now</a></li></ul>
 <button id="mn" aria-expanded="false">Menu</button>
 </nav></header>
 
@@ -233,30 +196,6 @@ input,select,textarea{width:100%;padding:11px 12px;border:1px solid #cfc8b4;back
 <div class="rule"></div>
 <h2>We believe a student should leave with understanding, not just a score.</h2>
 <p>That is why we put learning first. No pressure tactics and no empty promises, only good teaching, honest feedback and a student who grows in confidence every week.</p>
-</div></section>
-
-<section class="finder" id="doubt"><div class="wrap tut">
-<div>
-<h2>Ask your doubt, get your answer</h2>
-<div class="rule"></div>
-<p>Meet the Wisdom AI Tutor. Type any school doubt, any time of day, and get a clear explanation in seconds.</p>
-<ul class="feat">
-<li><i>1</i><span>Step-by-step explanations in simple language</span></li>
-<li><i>2</i><span>Available day and night, before every test</span></li>
-<li><i>3</i><span>Still stuck? Send the doubt to our teacher on WhatsApp</span></li>
-</ul>
-</div>
-<div class="tc">
-<div class="tch"><div class="av">AI</div><div><b>Wisdom AI Tutor</b><small>Online &middot; Classes IX to XII</small></div></div>
-<div class="tsel">
-<div><label for="dc">Class</label><select id="dc"><option>IX</option><option>X</option><option>XI</option><option>XII</option></select></div>
-<div><label for="ds">Subject</label><select id="ds"></select></div>
-</div>
-<div id="tm" aria-live="polite"></div>
-<div class="tchips" id="tchips"></div>
-<form class="tin" id="tf"><textarea id="dt" rows="1" placeholder="Type your doubt here..." aria-label="Your doubt"></textarea><button id="dgo" aria-label="Send">&#10148;</button></form>
-<div class="tfoot">AI answers can make mistakes. Please confirm important answers with your teacher.</div>
-</div>
 </div></section>
 
 <section id="subjects"><div class="wrap">
@@ -408,41 +347,8 @@ document.querySelectorAll("#chips button").forEach(function(b){b.onclick=functio
 })();
 </script>
 <script>
-(function(){
-var S={IX:["Mathematics","Science"],X:["Mathematics","Science"],XI:["Economics","Political Science","History"],XII:["Economics","Political Science","History"]};
-var X=[["IX","Mathematics","Solve: 2x + 5 = 17"],["X","Science","Why does ice float on water?"],["XI","Economics","Explain the law of demand"],["XII","Political Science","What was the Cold War?"]];
-var dc=document.getElementById("dc"),ds=document.getElementById("ds"),dt=document.getElementById("dt"),go=document.getElementById("dgo"),tm=document.getElementById("tm"),ch=document.getElementById("tchips"),busy=false,hist=[];
-function fill(){ds.innerHTML=S[dc.value].map(function(x){return"<option>"+x+"</option>"}).join("")}
-dc.onchange=fill;fill();
-function bub(c,t){var d=document.createElement("div");d.className="tb "+c;if(t)d.textContent=t;tm.appendChild(d);tm.scrollTop=tm.scrollHeight;return d}
-bub("a","Hello! I am the Wisdom AI Tutor. Choose your class and subject, then type your doubt. You can also try one of the examples below.");
-X.forEach(function(x){var b=document.createElement("button");b.type="button";b.textContent=x[2];b.onclick=function(){dc.value=x[0];fill();ds.value=x[1];dt.value=x[2];send()};ch.appendChild(b)});
-dt.addEventListener("input",function(){dt.style.height="auto";dt.style.height=Math.min(dt.scrollHeight,120)+"px"});
-dt.addEventListener("keydown",function(e){if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();send()}});
-document.getElementById("tf").addEventListener("submit",function(e){e.preventDefault();send()});
-function extras(b,q,ok){
- if(ok){var c=document.createElement("button");c.type="button";c.className="cp";c.textContent="Copy answer";c.onclick=function(){try{navigator.clipboard.writeText(b.firstChild.textContent);c.textContent="Copied"}catch(e){}};b.appendChild(c)}
- else{var a=document.createElement("a");a.className="wl";a.target="_blank";a.rel="noopener";a.href="https://wa.me/918532854131?text="+encodeURIComponent("Doubt (Class "+dc.value+", "+ds.value+"): "+q);a.textContent="Send this doubt to our teacher on WhatsApp";b.appendChild(document.createElement("br"));b.appendChild(a)}
-}
-async function send(){
- var q=dt.value.trim();if(!q||busy)return;
- busy=true;go.disabled=true;dt.value="";dt.style.height="auto";ch.style.display="none";
- bub("s",q);var b=bub("a");b.innerHTML='<span class="dots"><span></span><span></span><span></span></span>';
- try{
-  var sample=window.claude&&claude.use?await claude.use("sample"):null;
-  if(!sample)throw {};
-  var p="You are the friendly AI doubt-solving tutor of Social Wisdom Academy, helping a Class "+dc.value+" student with "+ds.value+" (Indian school curriculum). Explain step by step in simple language, show working where needed, and state the final answer clearly. Write maths in plain text (no LaTeX) and do not use markdown symbols such as ** or #. Keep it under 250 words. If the message is not an academic doubt about this subject, politely say you can only help with school doubts. End with one short encouraging line. If the topic needs more help, suggest a one-on-one doubt session with the academy.\n\nEarlier doubts in this chat: "+hist.slice(-3).join(" | ")+"\n\nStudent's doubt: "+q;
-  var r=await sample(p,{cache:false,onText:function(o){b.textContent=o.text;tm.scrollTop=tm.scrollHeight}});
-  b.textContent=r.text;hist.push(q);extras(b,q,true);
- }catch(e){
-  b.textContent="Sorry, the AI tutor is not available on this device right now. Our teacher will be happy to help you directly.";extras(b,q,false);
- }
- tm.scrollTop=tm.scrollHeight;busy=false;go.disabled=false;
-}
-})();
-</script>
-<script>
 var PORTAL={v:1,e:[]};
+async function api(p){var res=await fetch("/api/ask",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(p)});if(!res.ok)throw {};var j=await res.json();if(!j.text)throw {};return j.text}
 (function(){
 var te=new TextEncoder(),pf=document.getElementById("pf"),pr=document.getElementById("pr"),pe=document.getElementById("pe");
 function hex(b){return Array.from(new Uint8Array(b)).map(function(x){var h=x.toString(16);return h.length<2?"0"+h:h}).join("")}
@@ -501,11 +407,10 @@ function local(q){q=q.toLowerCase();for(var i=0;i<FAQ.length;i++)if(FAQ[i][0].te
 async function ask(q){
  if(busy)return;busy=true;add(q,"u");hist.push("Visitor: "+q);var out=add("...","b");
  try{
-  var sample=window.claude&&claude.use?await claude.use("sample"):null;
-  if(!sample)throw {code:"none"};
-  var prompt="You are Wisdom Assistant, the friendly website assistant of Social Wisdom Academy. Answer only using these facts, in 1-3 short sentences, warm and simple. Never invent fees, addresses, timings or results; if unknown, say so and give the phone number.\n\nFACTS: "+INFO+"\n\nCONVERSATION:\n"+hist.slice(-8).join("\n")+"\n\nReply as the assistant only.";
-  var r=await sample(prompt,{cache:false,modelTier:"quick",onText:function(o){out.textContent=o.text;msgs.scrollTop=msgs.scrollHeight}});
-  out.textContent=r.text;hist.push("Assistant: "+r.text);
+  var text,sample=window.claude&&claude.use?await claude.use("sample"):null;
+  if(sample){var prompt="You are Wisdom Assistant, the friendly website assistant of Social Wisdom Academy. Answer only using these facts, in 1-3 short sentences, warm and simple. Never invent fees, addresses, timings or results; if unknown, say so and give the phone number.\n\nFACTS: "+INFO+"\n\nCONVERSATION:\n"+hist.slice(-8).join("\n")+"\n\nReply as the assistant only.";
+  var r=await sample(prompt,{cache:false,modelTier:"quick",onText:function(o){out.textContent=o.text;msgs.scrollTop=msgs.scrollHeight}});text=r.text}else{text=await api({mode:"chat",hist:hist.slice(-8)})}
+  out.textContent=text;hist.push("Assistant: "+text);
  }catch(e){var a=local(q);out.textContent=a;hist.push("Assistant: "+a)}
  busy=false}
 function open(){box.classList.add("open");if(!started){started=true;add("Hello! I am Wisdom Assistant. Ask me about classes, fees, demo classes or how to contact us.","b")}inp.focus()}
